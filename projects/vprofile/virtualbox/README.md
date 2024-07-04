@@ -8,7 +8,6 @@ This project aims to deploy a multi-tier application on virtual machines using V
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
 - [Usage](#usage)
-- [Contributing](#contributing)
 
 
 ## Introduction
@@ -57,5 +56,4 @@ Follow these steps to set up and deploy the application:
 - **Memcached**: Provides caching to improve application performance.
 - **RabbitMQ**: Manages messaging and communication between different parts of the application.
 
-## Contributing
-Contributions are welcome! Please fork this repository and submit a pull request for any features, enhancements, or bug fixes. Ensure your code follows the existing style and includes appropriate tests.
+

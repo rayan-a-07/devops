@@ -28,8 +28,13 @@ The architecture of this project consists of the following components:
 ## Prerequisites
 To run this project, you need the following installed on your local machine:
 
-- [Vagrant](https://www.vagrantup.com/)
 - [VirtualBox](https://www.virtualbox.org/)
+- [Git for Windows](https://git-scm.com/downloads) (if you are on windows)
+- [Vagrant](https://www.vagrantup.com/)
+- Vagrant plugin
+  ```sh
+  vagrant plugin install vagrant-hostmanager
+  ```
 
 ## Setup
 Follow these steps to set up and deploy the application:

@@ -48,7 +48,7 @@ Follow these steps to set up and deploy the application:
     Vagrant will automatically provision the VMs based on the configuration provided in the `Vagrantfile`.
 
 3. **Access the application:**
-    Once the setup is complete, you can access the application through the NGINX server at `http://192.168.56.11:8080`.
+    Once the setup is complete, you can access the application through the NGINX server at `http://192.168.56.11:80`.
 
 ## Usage
 - **NGINX**: Acts as the entry point for user requests, forwarding them to Tomcat.

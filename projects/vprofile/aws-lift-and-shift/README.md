@@ -74,7 +74,7 @@ Set up a hosted zone in Route 53 for DNS management. Create records for your bac
 
 - **Retrieve Artifact**: From the tomcat EC2 instance download the artifact from S3:
     ```sh
-    aws s3 cp s3://vprofile-artifact-05072024/vprofile-v2.war /tmp/
+    aws s3 cp s3://artifact-bucket-name/vprofile-v2.war /tmp/
     ```
 - **Deploy Artifact**:
     ```sh

@@ -43,17 +43,14 @@ Launch EC2 instances to host your application. Select the appropriate instance t
 
 <img src="../aws-lift-and-shift/img/ec2.png">
 
-
 ### 3. Configure Route 53
 Set up a hosted zone in Route 53 for DNS management. Create records for your backend servers using their private IP addresses to facilitate internal communication.
 
-**Steps**:
 - Navigate to Route 53 in the AWS Management Console.
 - Create a new hosted zone for your domain.
 - Add A records for your backend servers with their private IP addresses.
 
 <img src="../aws-lift-and-shift/img/r53.png">
-
 
 ### 4. Build the Application
 - Edit the `application.properties` file to specify the appropriate domains for the `vprofile` application.
@@ -92,7 +89,7 @@ Create an Application Load Balancer (ALB) to distribute incoming traffic across 
 
 <img src="../aws-lift-and-shift/img/tg.png">
 
-2. **Create ALB**: Set up an ALB and configure it to distribute traffic to the target group.
+- **Create ALB**: Set up an ALB and configure it to distribute traffic to the target group.
 
 <img src="../aws-lift-and-shift/img/alb.png">
 
@@ -104,12 +101,12 @@ Configure Auto Scaling to automatically adjust the number of EC2 instances based
 
 <img src="../aws-lift-and-shift/img/launchingtemplate.png">
 
-3. **Create Auto Scaling Group**: Set up an auto-scaling group using the launch template and link it to the target group created earlier.
+- **Create Auto Scaling Group**: Set up an auto-scaling group using the launch template and link it to the target group created earlier.
 
 <img src="../aws-lift-and-shift/img/asg1.png">
 
-4. **Configure Health Checks**: Enable ELB health checks for the auto-scaling group.
-5. **Set Scaling Policies**: Define the desired, minimum, and maximum number of instances and configure scaling policies.
+- **Configure Health Checks**: Enable ELB health checks for the auto-scaling group.
+- **Set Scaling Policies**: Define the desired, minimum, and maximum number of instances and configure scaling policies.
 
 <img src="../aws-lift-and-shift/img/asg2.png">
 
